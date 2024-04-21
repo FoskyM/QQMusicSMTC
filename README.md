@@ -7,6 +7,7 @@
 - [写在前面](#写在前面)
 - [支持版本](#支持版本)
 - [使用方法](#使用方法)
+- [存在的问题](#存在的问题)
 - [要做的](#要做的)
 - [感谢项目](#感谢项目)
 - [应用场景](#应用场景)
@@ -21,10 +22,14 @@
 - QQMusic 2013.19.03.03 （本插件发布时该版本为最新版）
 
 ## 使用方法
-下载 Release 中的 `QQMusicSMTC_DLL_With_EXE.dll` 与 `QQMusicSMTC.exe`，\
-打开 QQ 音乐的目录，比如 `E:\Program Files\Tencent\QQMusic\QQMusic2013.19.03.03\`，\
-把两个文件丢进去，并把 `QQMusicSMTC_DLL_With_EXE.dll` 重命名为 `msimg32.dll`，\
-启动 QQ 音乐，查看右下角媒体播放器状态确认是否成功。
+- 下载 Release 中的 `QQMusicSMTC_DLL_With_EXE.dll` 与 `QQMusicSMTC.exe`，\
+- 打开 QQ 音乐的目录，比如 `E:\Program Files\Tencent\QQMusic\QQMusic2013.19.03.03\`，\
+- 把两个文件丢进去，并把 `QQMusicSMTC_DLL_With_EXE.dll` 重命名为 `msimg32.dll`，\
+- 启动 QQ 音乐，查看右下角媒体播放器状态确认是否成功。
+
+## 存在的问题
+- 网络波动或不良状况导致的歌曲信息获取不到，导致空白
+- 有时会卡在某首歌（有时间再修）
 
 ## 要做的
 - [x] 支持 SMTC

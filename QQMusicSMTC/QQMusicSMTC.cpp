@@ -58,7 +58,7 @@ void asyncSMTCUpdate() {
 
 		// updateSMTCTimeline(0, length);
 
-		if (song_id == last_song_id) {
+		if (song_id == last_song_id || song_id == 0) {
 			continue;
 		}
 		last_song_id = song_id;

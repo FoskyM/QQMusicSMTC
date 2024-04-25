@@ -30,6 +30,23 @@ void exit_SMTC() {
 	SMTC::disable();
 }
 
+void asyncSongInfoUpdate(int song_id) {
+	string title;
+	string artist;
+	string pic_url;
+	string album_name;
+	QQMusicHelper::songInfo(song_id, title, artist, pic_url, album_name);
+
+	char* artist_c = to_cstr_dyn(artist);
+	char* title_c = to_cstr_dyn(title);
+	char* album_name_c = to_cstr_dyn(album_name);
+	char* pic_url_c = to_cstr_dyn(pic_url);
+
+	SMTC::update(title_c, album_name_c, artist_c, pic_url_c);
+	cout << title_c << album_name_c << artist_c << pic_url_c << endl;
+	cout << "Updated SMTC" << endl;
+}
+
 void asyncSMTCUpdate() {
 	LPCWSTR className = L"QQMusic_Daemon_Wnd";
 	HWND hWnd = FindWindowEx(NULL, NULL, className, NULL);
@@ -63,20 +80,7 @@ void asyncSMTCUpdate() {
 		}
 		last_song_id = song_id;
 
-		string title;
-		string artist;
-		string pic_url;
-		string album_name;
-		QQMusicHelper::songInfo(song_id, title, artist, pic_url, album_name);
-
-		char* artist_c = to_cstr_dyn(artist);
-		char* title_c = to_cstr_dyn(title);
-		char* album_name_c = to_cstr_dyn(album_name);
-		char* pic_url_c = to_cstr_dyn(pic_url);
-
-		SMTC::update(title_c, album_name_c, artist_c, pic_url_c);
-		cout << title_c << album_name_c << artist_c << pic_url_c << endl;
-		cout << "Updated SMTC" << endl;
+		auto future = async(launch::async, asyncSongInfoUpdate, song_id);
 	}
 }
 

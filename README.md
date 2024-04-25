@@ -57,7 +57,7 @@ MusicTotalTime -> QQMusic.dll+B0678C -> QQMusic.dll+B06778+14
 - **Wallpaper Engine：壁纸引擎** \
   音频响应壁纸可从 SMTC 协议中获取正在播放的音乐信息。
   ![image](https://github.com/FoskyM/QQMusicSMTC/assets/39661663/4778e63e-cd80-4b75-abfe-7d51fc3cac57)
-- **Mix Space & Shiro & ProccessReporter** \
-  [ProccessReporter](https://mx-space.js.org/themes/shiro/extra#%E6%88%91%E7%9A%84%E5%8A%A8%E6%80%81) 可以通过 SMTC 协议获取到你在听的音乐，上报到 [Mix Space](https://github.com/mx-space) 的接口，并在其 [Shiro](https://github.com/Innei/Shiro) 主题上显示。 \
+- **Mix Space & Shiro & ProcessReporter** \
+  [ProcessReporter](https://mx-space.js.org/themes/shiro/extra#%E6%88%91%E7%9A%84%E5%8A%A8%E6%80%81) 可以通过 SMTC 协议获取到你在听的音乐，上报到 [Mix Space](https://github.com/mx-space) 的接口，并在其 [Shiro](https://github.com/Innei/Shiro) 主题上显示。 \
   ![image](https://github.com/FoskyM/QQMusicSMTC/assets/39661663/be0772e4-51da-42a4-8b7f-a759288ec80f)
 

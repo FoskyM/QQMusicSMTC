@@ -1,3 +1,6 @@
+# 弃坑说明
+2024/06/13  QQ 音乐在最新的 20.22.2692.0613 版本中增加了 SMTC 的支持。
+
 # QQMusicSMTC
 让你的 QQ 音乐支持 SMTC 协议。\
 ![image](https://github.com/FoskyM/QQMusicSMTC/assets/39661663/6323452a-f7bc-4105-9040-33b575893682)
